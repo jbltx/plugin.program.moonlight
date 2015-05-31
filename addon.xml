@@ -2,7 +2,6 @@
 <addon id="plugin.program.moonlight" name="Moonlight" version="0.1" provider-name="jambonlatex">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.module.simplejson" version="2.0.9"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="addon.py">
         <provides>executable</provides>
