@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
-	<category label="30001">
-		<setting label="30007" type="lsep"/>
-		<setting id="java_path" type="file" label="30009" default="" />
-		<setting id="moonlight_path" type="file" label="30003" default="" />
-		<setting id="moonlight_type" type="select" label="30011" values="normal|embedded" default="normal"/>
-		<setting label="30008" type="lsep"/>
-		<setting id="host_ip" type="ipaddress" label="30004" default="" />
-		<setting id="resolution" type="select" label="30005" values="720p|1080p" default="720p"/>
-		<setting id="fps" type="select" label="30010" values="30fps|60fps" default="30fps"/>
-	</category>
-	<category label="30002">
-		<setting id="pad_mapping_path" type="file" label="30006" default="" />
-	</category>
+    <category label="32001">
+        <setting label="32011" type="ipaddress"   id="host" default="127.0.0.1"/>
+        <setting label="32012" type="select"   id="fps" values="30fps|60fps" default="60fps"/>
+        <setting label="32013" type="select"   id="width" values="1080p|720p" default="1080p"/>
+        <setting label="32032" type="lsep"/>
+        <setting label="32014" type="select" id="controller" values="Xbox360|Xbox360 Wireless|Dualshock|Default|Custom Mapping" default="Default"/>
+        <setting label="32015" type="file"   id="map" enable="eq(-1,Custom Mapping)" default=""/>
+        <setting label="32033" type="lsep"/>
+        <setting label="32016" type="text"   id="args" default=""/>
+    </category>
 </settings>
